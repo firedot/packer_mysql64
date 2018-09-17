@@ -1,12 +1,12 @@
-# packer-mysql64
+# packer-redis64
 
-firedot-mysql64
+firedot-redis64
 
 **This repository is based on [that](https://github.com/nabels-coolblue/packer-xenial64) repository.**
 
 Here you could find instructuions how to create a basic Vagrant box with Packer. 
 
-**The box will also have mysql-server installed.**
+**The box will also have redis-server installed.**
 
 You could learn more about Vagrant [here](https://www.vagrantup.com/intro/index.html)
 
@@ -20,7 +20,7 @@ You could learn more about VirtualBox by visiting: https://www.virtualbox.org/
 
 ## Clone this repository by typing: 
 ````
-git clone https://github.com/firedot/packer_mysql64.git
+git clone https://github.com/firedot/packer_redis64.git
 ```` 
 ### VirtualBox phase
 Install VirtualBox on your machine. 
@@ -45,14 +45,14 @@ Kitchen-vagrant test for Vagrant box
  1. Run the following command to make your box available to Vagrant: 
 
 ````
-vagrant box add --name mysql64 mysql64.box
+vagrant box add --name redis64 redis64.box
 ````
 **This will make the box created with packer available to vagrant**
 
  2. Another way to obtain the box is by executing the following command:
  
     ````
-    vagrant box add firedot/mysql64
+    vagrant box add firedot/redis64
     ````
       The previous line will download the already built box from the VagrantCloud.
       
